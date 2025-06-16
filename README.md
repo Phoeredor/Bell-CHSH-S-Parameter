@@ -1,77 +1,58 @@
-# Bell-CHSH-S-Parameter
+# CHSH Bell S-Parameter Test
 
-A reproducible comparison of CHSH Bell‑inequality measurements on the Bell state |Φ⁺⟩, implemented in three environments using Qiskit  
-- Ideal Qiskit Aer (no noise)  
-- Noise‑model simulation (FakeWashington)  
-- IBM real hardware  
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
+[![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)]()  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/your-user/bell-chsh-benchmark/main)
 
-[![MIT License]()](LICENSE)
+A reproducible implementation of the CHSH Bell‑inequality test on the maximally entangled state |Φ⁺⟩, comparing three environments:
 
-## 📋 Table of Contents
+- **Ideal Aer simulator** (noiseless)  
+- **Noise‑model (FakeWashington)**  
+- **IBM hardware**
+---
+## :cd: Quick Start
 
-1. [Overview](#overview)  
-2. [Repository Structure](#repository-structure)  
-3. [Installation](#installation)  
-4. [Usage](#usage)  
-5. [Examples of Output](#examples-of-output)  
-6. [Acknowledgments](#acknowledgments)  
-7. [Contributing](#contributing)  
-8. [License](#license)  
-9. [Citation](#citation)
-
-
-## 🔍 Overview
-
-We prepare the Bell state  
-\[
-  |\Phi^+\rangle = \tfrac{1}{\sqrt2}(|00\rangle + |11\rangle)
-\]
-apply a rotation \(R_y(\theta)\) on qubit 0, and measure the CHSH witness observables  
-\[
-  W_1 = Z\otimes Z - Z\otimes X + X\otimes Z + X\otimes X,\quad
-  W_2 = Z\otimes Z + Z\otimes X - X\otimes Z + X\otimes X
-\]
-for \(\theta\in[0,2\pi]\). We extract the maximal \(S\)-parameter for each backend:
-
+1. **Clone & enter**  
+```bash
+   git clone https://github.com/your-user/bell-chsh-benchmark.git
+   cd bell-chsh-benchmark
+```
+2. **Setup**
+  ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+  ```
+3. **Run**
+- Notebook
+  ```bash
+  jupyter lab notebooks/1_ideal_simulation.ipynb
+  ```
+- Script
+  ```bash
+  python src/chsh_benchmark.py --backend ideal --shots 100000
+  ```
+## :chart_with_upwards_trend: Results
 | Backend | \(S_{\max}\)     | Mean ± σ      |
 |:-------:|:----------------:|:-------------:|
 | Ideal   | 2.8274           | 2.528 ± 0.269 |
 | Noisy   | 2.4647           | 2.204 ± 0.234 |
 | Real    | 2.8645           | 2.525 ± 0.266 |
 
-## 📂 Repository Structure
+See [figures/]() for plots and circuits
 
-## ⚙️ Installation
+## :handshake: Acknowledgments
+   - Base circuits and measurement scheme adapted from the [IBM Quantum Experience documentation](https://learning.quantum.ibm.com/tutorial/chsh-inequality)
+   - Portions of code generated with assistence from [ChatGPT](https://openai.com/index/chatgpt/)
+6. ## 	:page_with_curl: License
+   This project is distributed under the MIT License. See [LICENSE](https://img.shields.io/badge/License-MIT-blue.svg) for details.
+## 	:books: Citation
+If you use this work in your research, please cite:
 
-1. **Clone the repository**  
-    ```bash
-    git clone https://github.com/your-user/bell-chsh-benchmark.git
-    cd bell-chsh-benchmark
-
-2. **Set up a virtual enviroment
-    ```bash
-    python3 -m venv .venv
-    source .venv/bin/activate
-3. Install dependencies
-    ```bash
-    pip install -r requirements.txt
-
----
-
-## 7. Examples of Output  
-
-Show your key plots inline with relative paths:
-
-```markdown
-## 📈 Examples of Output
-
-![Ideal Simulator CHSH](figures/AERSIMULATOR_chsh_witness.svg)  
-![Noise Simulator CHSH](figures/Noise_chsh_witness.svg)  
-![Hardware CHSH](figures/IBM_chsh_witness.svg)
-
-
-
-
-
-
-
+```bibtex
+@misc{malara2025bell,
+  author       = {F.G.Malara},
+  title        = {{S-Parameter in CHSH Bell Inequalities for a Bell State}},
+  year         = {2025},
+  howpublished = {\url{https://github.com/Phoeredor/Bell-CHSH-S-Parameter}}
+}
