@@ -45,7 +45,7 @@ jupyterlab==4.1.0
 4. **Run**
 - Notebook
   ```bash
-  jupyter lab notebooks/1_ideal_simulation.ipynb
+  jupyter lab notebooks/Real_Hardware_Simulation_CHSH.ipynb
   ```
 - Script
   ```bash
