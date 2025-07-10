@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
 [![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)]()  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/your-user/bell-chsh-benchmark/main)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Phoeredor/bell-chsh-benchmark/main?urlpath=lab/tree/notebooks)
 
 A reproducible implementation of the CHSH Bell‑inequality test on the maximally entangled state |Φ⁺⟩, comparing three environments:
 
@@ -65,13 +65,3 @@ See [Results/](Results/) for plots and circuits gained.
    - Portions of code generated with assistence from [ChatGPT](https://openai.com/index/chatgpt/)
 6. ## 	:page_with_curl: License
    This project is distributed under the MIT License. See [LICENSE](https://img.shields.io/badge/License-MIT-blue.svg) for details.
-## 	:books: Citation
-If you use this work in your research, please cite:
-
-```bibtex
-@misc{malara2025bell,
-  author       = {F.G.Malara},
-  title        = {{S-Parameter in CHSH Bell Inequalities for a Bell State}},
-  year         = {2025},
-  howpublished = {\url{https://github.com/Phoeredor/Bell-CHSH-S-Parameter}}
-}
