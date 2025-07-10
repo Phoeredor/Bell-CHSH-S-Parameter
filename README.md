@@ -8,7 +8,7 @@ A reproducible implementation of the CHSH Bell‑inequality test on the maximall
 
 - **Ideal Aer simulator** (noiseless)  
 - **Noise‑model (FakeWashington)**  
-- **IBM hardware**
+- **IBM quantum hardware**
 
 ## :cd: Quick Start
 
@@ -27,11 +27,22 @@ source .venv/bin/activate
 # Windows PowerShell
 # .\.venv\Scripts\Activate.ps1
   ```
+3. **Requirements**
+In order to run the notebooks, ensure to have Python ≥ 3.8 and install the requirements
 ```bash
 pip install -r requirements.txt
 ```
-
-3. **Run**
+which contains
+```text
+numpy==2.3.1
+matplotlib==3.10.3
+seaborn==0.13.2
+qiskit-terra==0.46.3
+qiskit-aer==0.17.1
+qiskit-ibm-runtime==0.40.1
+jupyterlab==4.1.0
+```
+4. **Run**
 - Notebook
   ```bash
   jupyter lab notebooks/1_ideal_simulation.ipynb
@@ -41,13 +52,13 @@ pip install -r requirements.txt
   python src/chsh_benchmark.py --backend ideal --shots 100000
   ```
 ## :chart_with_upwards_trend: Results
-| Backend | \(S_{\max}\)     | Mean ± σ      |
+| Backend | S<sub>max</sub>  | Mean ± &sigma;|
 |:-------:|:----------------:|:-------------:|
 | Ideal   | 2.8274           | 2.528 ± 0.269 |
 | Noisy   | 2.4647           | 2.204 ± 0.234 |
 | Real    | 2.8645           | 2.525 ± 0.266 |
 
-See [figures/]() for plots and circuits
+See [figures/]() for plots and circuits gained.
 
 ## :handshake: Acknowledgments
    - Base circuits and measurement scheme adapted from the [IBM Quantum Experience documentation](https://learning.quantum.ibm.com/tutorial/chsh-inequality)
