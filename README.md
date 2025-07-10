@@ -2,8 +2,6 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
 [![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)]()  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Phoeredor/main?urlpath=lab/tree/Notebook/)
-
 
 A reproducible implementation of the CHSH Bell‑inequality test on the maximally entangled state |Φ⁺⟩, comparing three environments:
 
@@ -50,6 +48,13 @@ pip install -r requirements.txt
 | Real    | 2.8645           | 2.525 ± 0.266 |
 
 See [Results/](Results/) for plots and circuits gained.
+### Launch notebooks on Binder
+
+| Simulation Type | Launch Binder |
+|-----------------|---------------|
+| AER Simulation (noiseless)| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Phoeredor/Bell-CHSH-S-Parameter/main?urlpath=lab/tree/Notebook/Simulations/AER_Simulation_CHSH.ipynb) |
+| FakeWashington Noise Model| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Phoeredor/Bell-CHSH-S-Parameter/main?urlpath=lab/tree/Notebook/Simulations/FakeW_Local_Sim_CHSH.ipynb) |
+| IBM Real Hardware | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Phoeredor/Bell-CHSH-S-Parameter/main?urlpath=lab/tree/Notebook/Real/Real_Hardware_Simulation_CHSH.ipynb) |
 
 ## :handshake: Acknowledgments
    - Base circuits and measurement scheme adapted from the [IBM Quantum Experience documentation](https://learning.quantum.ibm.com/tutorial/chsh-inequality)
