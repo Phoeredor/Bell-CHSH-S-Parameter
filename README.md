@@ -58,7 +58,7 @@ jupyterlab==4.1.0
 | Noisy   | 2.4647           | 2.204 ± 0.234 |
 | Real    | 2.8645           | 2.525 ± 0.266 |
 
-See [Results/]() for plots and circuits gained.
+See [Results/](Results/) for plots and circuits gained.
 
 ## :handshake: Acknowledgments
    - Base circuits and measurement scheme adapted from the [IBM Quantum Experience documentation](https://learning.quantum.ibm.com/tutorial/chsh-inequality)
