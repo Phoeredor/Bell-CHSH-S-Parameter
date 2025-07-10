@@ -33,16 +33,6 @@ In order to run the notebooks, ensure to have Python ≥ 3.8 and install the req
 ```bash
 pip install -r requirements.txt
 ```
-which contains
-```text
-numpy==2.3.1
-matplotlib==3.10.3
-seaborn==0.13.2
-qiskit-terra==0.46.3
-qiskit-aer==0.17.1
-qiskit-ibm-runtime==0.40.1
-jupyterlab==4.1.0
-```
 4. **Run**
 - Notebook
   ```bash
