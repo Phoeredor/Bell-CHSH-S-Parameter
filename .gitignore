@@ -1,1 +1,35 @@
--
+# === Python base ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints/
+
+# === Virtual enviroment ===
+.venv/
+
+# === SVG/PNG/PDF generated ===
+*.svg
+*.png
+*.pdf
+
+# === Python tool cace ===
+.mypy_cache/
+.pytest_cache/
+.cache/
+coverage.xml
+
+# === local / enc configuration ===
+.env
+*.env
+
+# === Editor / IDE (optional) ===
+.vscode/
+.idea/
+
+# === Operative system ===
+.DS_Store
+Thumbs.db
+
