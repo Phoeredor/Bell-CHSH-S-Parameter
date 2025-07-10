@@ -2,7 +2,7 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
 [![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)]()  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Phoeredor/bell-chsh-benchmark/main?urlpath=lab/tree/Notebook/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Phoeredor/main?urlpath=lab/tree/Notebook/)
 
 
 A reproducible implementation of the CHSH Bell‑inequality test on the maximally entangled state |Φ⁺⟩, comparing three environments:
