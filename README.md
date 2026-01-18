@@ -1,7 +1,7 @@
 # CHSH Bell S-Parameter Test
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
-[![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)]()  
+![Python](https://img.shields.io/badge/Python-%E2%89%A5%203.8-3776AB.svg?style=flat&logo=python&logoColor=white)
 
 A reproducible implementation of the CHSH Bell‑inequality test on the maximally entangled state |Φ⁺⟩, comparing three environments:
 
