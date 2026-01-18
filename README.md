@@ -52,4 +52,6 @@ See [Results/](Results/) for plots and circuits gained.
    - Base circuits and measurement scheme adapted from the [IBM Quantum Experience documentation](https://learning.quantum.ibm.com/tutorial/chsh-inequality)
    - Portions of code generated with assistence from [ChatGPT](https://openai.com/index/chatgpt/)
 ## :page_with_curl: License
-   This project is distributed under the MIT License. See [LICENSE](https://img.shields.io/badge/License-MIT-blue.svg) for details.
+This project is distributed under the MIT License.  
+See [LICENSE](LICENSE) for details.
+
